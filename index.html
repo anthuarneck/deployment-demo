@@ -9,5 +9,57 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <form>
+      <h1>
+          <strong>Payment Form</strong>
+      </h1>
+      <p>
+          Required fields are marked by *
+      </p>
+      <fieldset>
+          <legend>Contact Information</legend>
+          <label for="Mx.">Mx.</label>
+          <br> <input type="radio" name="contactInformation" id="Mx." checked>
+          <br>
+          <label for="Mr.">Mr.</label>
+          <br> <input type="radio" name="contactInformation" id="Mr.">
+          <br>
+          <label for="Ms.">Ms.</label>
+          <br> <input type="radio" name="contactInformation" id="Ms.">
+          <br>
+          <label for="Mrs.">Mrs.</label>
+          <br> <input type="radio" name="contactInformation" id="Mrs.">
+          <br>
+          <label for="name">Name</label>
+          <br>
+          <input type="text" Name="name">
+          <br>
+          <action="">
+              <label for="email">Email</label>
+              <br>
+              <input type="text" Name="email">
+      </fieldset>
+      <fieldset>
+          <legend>Payment Information</legend>
+          <select>
+              <label for="Payment Information">Payment Information</label>
+              <option value="MasterCard">MasterCard</option>
+              <option value="Visa">Visa</option>
+              <option value="American Express">American Express</option>
+              <option value="Discover">Discover</option>
+          </select>
+          Credit Card Number
+          <br>
+
+          <label for="Credit Card Number">
+              <input type="text" name="Credit Card Number" placeholder="xxxx xxxx xxxx xxxx">
+          </label>
+          <br>
+          <label for="Expiration Date">Expiration Date</label>
+          <br>
+          <input type="text" Name="Expiration Date">
+  </form>
+  </fieldset>
+  <input type="submit" Name="Submit Payment" value="Submit Payment">
   </body>
 </html>
